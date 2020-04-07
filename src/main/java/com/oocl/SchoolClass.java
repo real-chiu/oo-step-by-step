@@ -3,6 +3,21 @@ package com.oocl;
 import java.util.ArrayList;
 
 public class SchoolClass {
+    private String name;
+    private ArrayList<Student> studentList = new ArrayList<Student>();;
+
+    public Student getLeader() {
+        return leader;
+    }
+
+    public void setLeader(Student leader) {
+        if (studentList.contains(leader)) {
+            this.leader = leader;
+        }
+    }
+
+    private Student leader;
+
     public String getName() {
         return name;
     }
@@ -10,9 +25,6 @@ public class SchoolClass {
     public void setName(String name) {
         this.name = name;
     }
-
-    private String name;
-    private ArrayList<Student> studentList = new ArrayList<Student>();;
 
     public ArrayList<Student> getStudentList() {
         return studentList;

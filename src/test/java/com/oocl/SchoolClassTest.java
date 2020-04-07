@@ -8,7 +8,28 @@ public class SchoolClassTest extends TestCase {
         SchoolClass testSchoolClass = new SchoolClass();
         Student testStudent = new Student();
         testSchoolClass.addStudent(testStudent);
+        testStudent.setSchoolClass(testSchoolClass);
         assertEquals(1, testSchoolClass.getStudentList().size());
+    }
+
+    public void testAddLeaderWhenStudentInClass() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        Student testStudent = new Student();
+        testStudent.setSchoolClass(testSchoolClass);
+        testStudent.setName("Tom");
+
+        testSchoolClass.addStudent(testStudent);
+        testSchoolClass.setLeader(testStudent);
+        assertEquals("Tom", testSchoolClass.getLeader().getName());
+    }
+
+    public void testShouldNotAddLeaderWhenStudentNotInClass() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        Student testStudent = new Student();
+        testStudent.setName("Tom");
+
+        testSchoolClass.setLeader(testStudent);
+        assertEquals(null, testSchoolClass.getLeader());
     }
 
 }
