@@ -77,4 +77,42 @@ public class SchoolClassTest extends TestCase {
         assertEquals(null, testSchoolClass.getTeacher());
         assertEquals(null, testTeacher.getWelcomeStudentMessage());
     }
+    public void testTeacherShouldWelcomeLeader() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        testSchoolClass.setName("Class 2");
+
+        Teacher testTeacher = new Teacher();
+        testTeacher.setName("Woody");
+        testTeacher.setAge(30);
+        testTeacher.addSchoolClassTaught(testSchoolClass);
+
+        testSchoolClass.setTeacher(testTeacher);
+
+        Student testStudent = new Student();
+        testStudent.setName("Tom");
+        testStudent.setSchoolClass(testSchoolClass);
+
+        testSchoolClass.addStudent(testStudent);
+        testSchoolClass.setLeader(testStudent);
+
+        assertEquals("My name is Woody. I am 30 years old. Teaching for the future of world. Tom is the leader of Class 2.", testSchoolClass.getTeacher().getWelcomeLeaderMessage());
+    }
+
+    public void testShouldNotWelcomeLeaderIfNoLeader() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        testSchoolClass.setName("Class 2");
+
+        Teacher testTeacher = new Teacher();
+        testTeacher.setName("Woody");
+        testTeacher.setAge(30);
+        testTeacher.addSchoolClassTaught(testSchoolClass);
+
+        Student testStudent = new Student();
+        testStudent.setName("Tom");
+        testStudent.setSchoolClass(testSchoolClass);
+
+        testSchoolClass.setLeader(testStudent);
+        assertEquals(null, testSchoolClass.getLeader());
+        assertEquals(null, testTeacher.getWelcomeLeaderMessage());
+    }
 }

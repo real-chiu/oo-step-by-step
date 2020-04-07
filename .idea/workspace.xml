@@ -62,8 +62,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SchoolClassTest.testShouldNotWelcomeStudentIfNoStudent">
-    <configuration name="SchoolClassTest.testShouldNotAddLeaderWhenStudentNotInClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SchoolClassTest.testShouldNotWelcomeLeaderIfNoLeader">
+    <configuration name="SchoolClassTest.testShouldNotWelcomeLeaderIfNoLeader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oo-stepbystep" />
       <extension name="coverage">
         <pattern>
@@ -73,7 +73,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.oocl" />
       <option name="MAIN_CLASS_NAME" value="com.oocl.SchoolClassTest" />
-      <option name="METHOD_NAME" value="testShouldNotAddLeaderWhenStudentNotInClass" />
+      <option name="METHOD_NAME" value="testShouldNotWelcomeLeaderIfNoLeader" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,6 +90,22 @@
       <option name="PACKAGE_NAME" value="com.oocl" />
       <option name="MAIN_CLASS_NAME" value="com.oocl.SchoolClassTest" />
       <option name="METHOD_NAME" value="testShouldNotWelcomeStudentIfNoStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchoolClassTest.testTeacherShouldWelcomeLeader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oo-stepbystep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oocl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oocl" />
+      <option name="MAIN_CLASS_NAME" value="com.oocl.SchoolClassTest" />
+      <option name="METHOD_NAME" value="testTeacherShouldWelcomeLeader" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,29 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeacherTest.testTeacherShouldNotAddSchoolClassTaughtWhenTeachingFiveClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oo-stepbystep" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oocl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oocl" />
-      <option name="MAIN_CLASS_NAME" value="com.oocl.TeacherTest" />
-      <option name="METHOD_NAME" value="testTeacherShouldNotAddSchoolClassTaughtWhenTeachingFiveClasses" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SchoolClassTest.testShouldNotWelcomeLeaderIfNoLeader" />
+        <item itemvalue="JUnit.SchoolClassTest.testTeacherShouldWelcomeLeader" />
         <item itemvalue="JUnit.SchoolClassTest.testShouldNotWelcomeStudentIfNoStudent" />
         <item itemvalue="JUnit.SchoolClassTest.testTeacherShouldWelcomeStudent" />
         <item itemvalue="JUnit.TeacherTest.testTeacherShouldNotAddSchoolClassTaughtWhenAlreadyTeaching" />
-        <item itemvalue="JUnit.TeacherTest.testTeacherShouldNotAddSchoolClassTaughtWhenTeachingFiveClasses" />
-        <item itemvalue="JUnit.SchoolClassTest.testShouldNotAddLeaderWhenStudentNotInClass" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586240603318</updated>
       <workItem from="1586240605660" duration="1375000" />
-      <workItem from="1586242870851" duration="7438000" />
+      <workItem from="1586242870851" duration="9292000" />
     </task>
     <servers />
   </component>
@@ -187,7 +187,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/oocl/SchoolClass.java</url>
-          <line>39</line>
+          <line>42</line>
           <properties class="com.oocl.SchoolClass" method="addStudent">
             <option name="EMULATED" value="true" />
           </properties>

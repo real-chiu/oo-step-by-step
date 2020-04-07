@@ -22,6 +22,9 @@ public class SchoolClass {
 
     public void setLeader(Student leader) {
         if (studentList.contains(leader)) {
+            if (teacher != null) {
+                teacher.setWelcomeLeaderMessage(leader.getName(), getName());
+            }
             this.leader = leader;
         }
     }
