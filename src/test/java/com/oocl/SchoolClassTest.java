@@ -32,4 +32,13 @@ public class SchoolClassTest extends TestCase {
         assertEquals(null, testSchoolClass.getLeader());
     }
 
+    public void testAddTeacher() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        Teacher testTeacher = new Teacher();
+        testTeacher.setName("Woody");
+
+        testSchoolClass.setTeacher(testTeacher);
+        assertEquals("Woody", testSchoolClass.getTeacher().getName());
+    }
+
 }

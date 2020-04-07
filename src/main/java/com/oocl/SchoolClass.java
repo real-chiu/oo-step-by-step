@@ -4,6 +4,16 @@ import java.util.ArrayList;
 
 public class SchoolClass {
     private String name;
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+    private Teacher teacher;
     private ArrayList<Student> studentList = new ArrayList<Student>();;
 
     public Student getLeader() {
