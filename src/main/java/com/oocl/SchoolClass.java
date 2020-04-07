@@ -41,7 +41,9 @@ public class SchoolClass {
         this.studentList.contains(new Object());
         if (!studentList.contains(student)) {
             studentList.add(student);
-            teacher.setWelcomeMessage(student.getName(), getName());
+            if (teacher != null) {
+                teacher.setWelcomeMessage(student.getName(), getName());
+            }
         }
     }
 }

@@ -26,6 +26,6 @@ public class Teacher extends Person {
         welcomeMessage = String.format("Welcome %s join %s.", studentName, className);
     }
     public String getWelcomeStudentMessage() {
-        return introduce() + " " + welcomeMessage;
+        return welcomeMessage == null ? null : introduce() + " " + welcomeMessage;
     }
 }

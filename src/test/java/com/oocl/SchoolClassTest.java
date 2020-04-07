@@ -59,4 +59,22 @@ public class SchoolClassTest extends TestCase {
         testSchoolClass.addStudent(testStudent);
         assertEquals("My name is Woody. I am 30 years old. Teaching for the future of world. Welcome Tom join Class 2.", testSchoolClass.getTeacher().getWelcomeStudentMessage());
     }
+
+    public void testShouldNotWelcomeStudentIfNoStudent() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        testSchoolClass.setName("Class 2");
+
+        Teacher testTeacher = new Teacher();
+        testTeacher.setName("Woody");
+        testTeacher.setAge(30);
+        testTeacher.addSchoolClassTaught(testSchoolClass);
+
+        Student testStudent = new Student();
+        testStudent.setName("Tom");
+        testStudent.setSchoolClass(testSchoolClass);
+
+        testSchoolClass.addStudent(testStudent);
+        assertEquals(null, testSchoolClass.getTeacher());
+        assertEquals(null, testTeacher.getWelcomeStudentMessage());
+    }
 }
