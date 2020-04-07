@@ -11,7 +11,7 @@ public class StudentTest extends TestCase {
         Student student = new Student();
         student.setAge(18);
         student.setName("Tom");
-        student.setClassNum("class 2");
+        student.setSchoolClass("class 2");
         String expectedText = "My name is Tom. I am 18 years old. I am a student of class 2. Coding for the glory of OOCL.";
         assertEquals(expectedText, student.introduce());
     }
