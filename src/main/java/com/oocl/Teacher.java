@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Teacher extends Person {
     private ArrayList<SchoolClass> schoolClassTaught = new ArrayList<SchoolClass>();
+    private String welcomeMessage;
 
     public int getSchoolClassTaughtSize() {
         return schoolClassTaught.size();
@@ -20,5 +21,11 @@ public class Teacher extends Person {
 
     public String introduce() {
         return String.format("My name is %s. I am %s years old. Teaching for the future of world.", this.getName(), this.getAge());
+    }
+    public void setWelcomeMessage(String studentName, String className) {
+        welcomeMessage = String.format("Welcome %s join %s.", studentName, className);
+    }
+    public String getWelcomeStudentMessage() {
+        return introduce() + " " + welcomeMessage;
     }
 }

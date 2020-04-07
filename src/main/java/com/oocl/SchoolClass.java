@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class SchoolClass {
     private String name;
+    private Student leader;
+    private Teacher teacher;
+    private ArrayList<Student> studentList = new ArrayList<Student>();
 
     public Teacher getTeacher() {
         return teacher;
@@ -12,9 +15,6 @@ public class SchoolClass {
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
-
-    private Teacher teacher;
-    private ArrayList<Student> studentList = new ArrayList<Student>();;
 
     public Student getLeader() {
         return leader;
@@ -26,8 +26,6 @@ public class SchoolClass {
         }
     }
 
-    private Student leader;
-
     public String getName() {
         return name;
     }
@@ -35,19 +33,15 @@ public class SchoolClass {
     public void setName(String name) {
         this.name = name;
     }
-
-    public ArrayList<Student> getStudentList() {
-        return studentList;
-    }
-
-    private void setStudentList(ArrayList<Student> studentList) {
-        this.studentList = studentList;
+    public int getStudentListSize() {
+        return studentList.size();
     }
 
     public void addStudent(Student student) {
         this.studentList.contains(new Object());
         if (!studentList.contains(student)) {
             studentList.add(student);
+            teacher.setWelcomeMessage(student.getName(), getName());
         }
     }
 }

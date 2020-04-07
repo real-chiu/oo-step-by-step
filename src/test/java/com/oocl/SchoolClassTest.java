@@ -9,7 +9,7 @@ public class SchoolClassTest extends TestCase {
         Student testStudent = new Student();
         testSchoolClass.addStudent(testStudent);
         testStudent.setSchoolClass(testSchoolClass);
-        assertEquals(1, testSchoolClass.getStudentList().size());
+        assertEquals(1, testSchoolClass.getStudentListSize());
     }
 
     public void testAddLeaderWhenStudentInClass() {
@@ -41,4 +41,22 @@ public class SchoolClassTest extends TestCase {
         assertEquals("Woody", testSchoolClass.getTeacher().getName());
     }
 
+    public void testTeacherShouldWelcomeStudent() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        testSchoolClass.setName("Class 2");
+
+        Teacher testTeacher = new Teacher();
+        testTeacher.setName("Woody");
+        testTeacher.setAge(30);
+        testTeacher.addSchoolClassTaught(testSchoolClass);
+
+        testSchoolClass.setTeacher(testTeacher);
+
+        Student testStudent = new Student();
+        testStudent.setName("Tom");
+        testStudent.setSchoolClass(testSchoolClass);
+
+        testSchoolClass.addStudent(testStudent);
+        assertEquals("My name is Woody. I am 30 years old. Teaching for the future of world. Welcome Tom join Class 2.", testSchoolClass.getTeacher().getWelcomeStudentMessage());
+    }
 }
