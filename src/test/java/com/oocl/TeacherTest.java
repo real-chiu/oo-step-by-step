@@ -19,7 +19,7 @@ public class TeacherTest extends TestCase {
         schoolClass.setName("test class");
         teacher.addSchoolClassTaught(schoolClass);
 
-        assertEquals(1, teacher.getSchoolClassTaught().size());
+        assertEquals(1, teacher.getSchoolClassTaughtSize());
     }
 
     public void testTeacherShouldNotAddSchoolClassTaughtWhenAlreadyTeaching() {
@@ -30,7 +30,7 @@ public class TeacherTest extends TestCase {
         teacher.addSchoolClassTaught(schoolClass);
         teacher.addSchoolClassTaught(schoolClass);
 
-        assertEquals(1, teacher.getSchoolClassTaught().size());
+        assertEquals(1, teacher.getSchoolClassTaughtSize());
     }
 
     public void testTeacherShouldNotAddSchoolClassTaughtWhenTeachingFiveClasses() {
@@ -56,7 +56,7 @@ public class TeacherTest extends TestCase {
 
         teacher.addSchoolClassTaught(schoolClassSix);
 
-        assertEquals(5, teacher.getSchoolClassTaught().size());
-        assertEquals(false, teacher.getSchoolClassTaught().contains(schoolClassSix));
+        assertEquals(5, teacher.getSchoolClassTaughtSize());
+        assertEquals(false, teacher.checkIfSchoolClassTaughtContains(schoolClassSix));
     }
 }

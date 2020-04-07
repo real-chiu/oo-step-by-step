@@ -5,8 +5,11 @@ import java.util.ArrayList;
 public class Teacher extends Person {
     private ArrayList<SchoolClass> schoolClassTaught = new ArrayList<SchoolClass>();
 
-    public ArrayList<SchoolClass> getSchoolClassTaught() {
-        return schoolClassTaught;
+    public int getSchoolClassTaughtSize() {
+        return schoolClassTaught.size();
+    }
+    public boolean checkIfSchoolClassTaughtContains(SchoolClass schoolClass) {
+        return schoolClassTaught.contains(schoolClass);
     }
 
     public void addSchoolClassTaught(SchoolClass schoolClassTaught) {
