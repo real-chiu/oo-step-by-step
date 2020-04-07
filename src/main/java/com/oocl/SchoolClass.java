@@ -27,6 +27,7 @@ public class SchoolClass {
             if (teacher != null) {
                 teacher.setWelcomeLeaderMessage(leader.getName(), getName());
             }
+            studentList.stream().forEach(otherStudent -> otherStudent.setWelcomeLeaderMessage(leader.getName(), getName()));
             this.leader = leader;
         }
     }
@@ -42,8 +43,12 @@ public class SchoolClass {
         return studentList.size();
     }
 
-    public List<String> getStudentsWelcome() {
+    public List<String> getStudentsWelcomeStudent() {
         return studentList.stream().map(otherStudent -> otherStudent.getWelcomeStudentMessage()).collect(Collectors.toList());
+    }
+
+    public List<String> getStudentsWelcomeLeader() {
+        return studentList.stream().map(otherStudent -> otherStudent.getWelcomeLeaderMessage()).collect(Collectors.toList());
     }
 
     public void addStudent(Student student) {

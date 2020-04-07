@@ -3,6 +3,8 @@ package com.oocl;
 public class Student extends Person {
     private SchoolClass schoolClass;
     private String welcomeStudentMessage;
+    private String welcomeLeaderMessage;
+
     public void setSchoolClass(SchoolClass schoolClass) {
         this.schoolClass = schoolClass;
     }
@@ -21,5 +23,13 @@ public class Student extends Person {
 
     public String getWelcomeStudentMessage() {
         return welcomeStudentMessage == null ? null : introduce() + " " + welcomeStudentMessage;
+    }
+
+    public void setWelcomeLeaderMessage(String studentName, String className) {
+        welcomeLeaderMessage = String.format("%s is the leader of %s.", studentName, className);
+    }
+
+    public String getWelcomeLeaderMessage() {
+        return welcomeLeaderMessage == null ? null : introduce() + " " + welcomeLeaderMessage;
     }
 }
