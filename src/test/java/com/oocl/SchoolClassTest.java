@@ -77,6 +77,7 @@ public class SchoolClassTest extends TestCase {
         assertEquals(null, testSchoolClass.getTeacher());
         assertEquals(null, testTeacher.getWelcomeStudentMessage());
     }
+
     public void testTeacherShouldWelcomeLeader() {
         SchoolClass testSchoolClass = new SchoolClass();
         testSchoolClass.setName("Class 2");
@@ -114,5 +115,58 @@ public class SchoolClassTest extends TestCase {
         testSchoolClass.setLeader(testStudent);
         assertEquals(null, testSchoolClass.getLeader());
         assertEquals(null, testTeacher.getWelcomeLeaderMessage());
+    }
+
+    public void testStudentsShouldWelcomeStudent() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        testSchoolClass.setName("Class 2");
+
+        Teacher testTeacher = new Teacher();
+        testTeacher.setName("Woody");
+        testTeacher.setAge(30);
+        testTeacher.addSchoolClassTaught(testSchoolClass);
+
+        testSchoolClass.setTeacher(testTeacher);
+
+        Student testStudent = new Student();
+        testStudent.setName("Tom");
+        testStudent.setAge(15);
+        testStudent.setSchoolClass(testSchoolClass);
+
+        Student testStudentTwo = new Student();
+        testStudentTwo.setName("Peter");
+        testStudentTwo.setAge(12);
+        testStudentTwo.setSchoolClass(testSchoolClass);
+
+        Student testStudentThree = new Student();
+        testStudentThree.setName("John");
+        testStudentThree.setAge(15);
+        testStudentThree.setSchoolClass(testSchoolClass);
+
+        testSchoolClass.addStudent(testStudent);
+        testSchoolClass.addStudent(testStudentTwo);
+        assertEquals("My name is Tom. I am 15 years old. I am a student of Class 2. Coding for the glory of OOCL. Welcome Peter join Class 2.", testSchoolClass.getStudentsWelcome().get(0));
+
+    }
+
+    public void testFirstStudentShouldNotWelcomeStudent() {
+        SchoolClass testSchoolClass = new SchoolClass();
+        testSchoolClass.setName("Class 2");
+
+        Teacher testTeacher = new Teacher();
+        testTeacher.setName("Woody");
+        testTeacher.setAge(30);
+        testTeacher.addSchoolClassTaught(testSchoolClass);
+
+        testSchoolClass.setTeacher(testTeacher);
+
+        Student testStudent = new Student();
+        testStudent.setName("Tom");
+        testStudent.setAge(15);
+        testStudent.setSchoolClass(testSchoolClass);
+
+        testSchoolClass.addStudent(testStudent);
+        assertEquals(null, testSchoolClass.getStudentsWelcome().get(0));
+
     }
 }

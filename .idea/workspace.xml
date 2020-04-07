@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc263eb9-4cdf-4b3f-a1f6-2bcd82866832" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oo-stepbystep.iml" beforeDir="false" afterPath="$PROJECT_DIR$/oo-stepbystep.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oocl/SchoolClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oocl/SchoolClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oocl/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oocl/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oocl/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oocl/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/oocl/SchoolClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/oocl/SchoolClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/oocl/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/oocl/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/oocl/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/oocl/Person.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/oocl/SchoolClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/oocl/SchoolClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/oocl/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/oocl/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/oocl/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/oocl/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/oocl/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/oocl/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/oocl/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/oocl/PersonTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/oocl/SchoolClassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/oocl/SchoolClassTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/oocl/StudentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/oocl/StudentTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/oocl/TeacherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/oocl/TeacherTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,7 +47,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -62,7 +73,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SchoolClassTest.testShouldNotWelcomeLeaderIfNoLeader">
+  <component name="RunManager" selected="JUnit.SchoolClassTest.testFirstStudentShouldNotWelcomeStudent">
+    <configuration name="SchoolClassTest.testFirstStudentShouldNotWelcomeStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oo-stepbystep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oocl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oocl" />
+      <option name="MAIN_CLASS_NAME" value="com.oocl.SchoolClassTest" />
+      <option name="METHOD_NAME" value="testFirstStudentShouldNotWelcomeStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SchoolClassTest.testShouldNotWelcomeLeaderIfNoLeader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oo-stepbystep" />
       <extension name="coverage">
@@ -95,6 +122,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SchoolClassTest.testStudentsShouldWelcomeStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oo-stepbystep" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oocl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oocl" />
+      <option name="MAIN_CLASS_NAME" value="com.oocl.SchoolClassTest" />
+      <option name="METHOD_NAME" value="testStudentsShouldWelcomeStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SchoolClassTest.testTeacherShouldWelcomeLeader" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oo-stepbystep" />
       <extension name="coverage">
@@ -111,45 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SchoolClassTest.testTeacherShouldWelcomeStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oo-stepbystep" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oocl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oocl" />
-      <option name="MAIN_CLASS_NAME" value="com.oocl.SchoolClassTest" />
-      <option name="METHOD_NAME" value="testTeacherShouldWelcomeStudent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeacherTest.testTeacherShouldNotAddSchoolClassTaughtWhenAlreadyTeaching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oo-stepbystep" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oocl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oocl" />
-      <option name="MAIN_CLASS_NAME" value="com.oocl.TeacherTest" />
-      <option name="METHOD_NAME" value="testTeacherShouldNotAddSchoolClassTaughtWhenAlreadyTeaching" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SchoolClassTest.testFirstStudentShouldNotWelcomeStudent" />
+        <item itemvalue="JUnit.SchoolClassTest.testStudentsShouldWelcomeStudent" />
         <item itemvalue="JUnit.SchoolClassTest.testShouldNotWelcomeLeaderIfNoLeader" />
         <item itemvalue="JUnit.SchoolClassTest.testTeacherShouldWelcomeLeader" />
         <item itemvalue="JUnit.SchoolClassTest.testShouldNotWelcomeStudentIfNoStudent" />
-        <item itemvalue="JUnit.SchoolClassTest.testTeacherShouldWelcomeStudent" />
-        <item itemvalue="JUnit.TeacherTest.testTeacherShouldNotAddSchoolClassTaughtWhenAlreadyTeaching" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +175,9 @@
       <option name="presentableId" value="Default" />
       <updated>1586240603318</updated>
       <workItem from="1586240605660" duration="1375000" />
-      <workItem from="1586242870851" duration="9292000" />
+      <workItem from="1586242870851" duration="9954000" />
+      <workItem from="1586253562476" duration="640000" />
+      <workItem from="1586254219007" duration="956000" />
     </task>
     <servers />
   </component>
@@ -176,7 +189,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -186,17 +201,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/oocl/SchoolClass.java</url>
-          <line>42</line>
-          <properties class="com.oocl.SchoolClass" method="addStudent">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/oocl/SchoolClassTest.java</url>
           <line>25</line>
-          <properties class="com.oocl.SchoolClassTest" method="shouldNotAddLeaderWhenStudentNotInClass">
+          <properties class="com.oocl.SchoolClassTest" method="testShouldNotAddLeaderWhenStudentNotInClass">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="6" />
